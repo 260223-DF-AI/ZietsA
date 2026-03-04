@@ -1,6 +1,6 @@
 """Tests for the Task model."""
 
-import pytest
+import test_pytest.test_file as test_file
 from task_manager.models.task import Task
 
 
