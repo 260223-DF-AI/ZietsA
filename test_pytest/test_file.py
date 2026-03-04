@@ -8,4 +8,4 @@ class Test_File:
         assert func(3) == 4
 
     def test_sum(self):
-        assert (0.19 + 0.29) == pytest.approx(0.48)
+        assert (0.19000000000004 + 0.29000000000000000349403) == pytest.approx(0.48)
