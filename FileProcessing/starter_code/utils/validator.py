@@ -1,3 +1,5 @@
+from starter_code.expections import FileProcessingError, InvalidDataError, MissingFieldError
+
 def validate_sales_record(record, line_number):
     """
     Validate a single sales record.
@@ -11,7 +13,10 @@ def validate_sales_record(record, line_number):
     Returns: Validated record with converted types
     Raises: InvalidDataError or MissingFieldError
     """
-    pass
+    if len(record) != 5:
+        raise InvalidDataError
+    
+    
 
 def validate_all_records(records):
     """
